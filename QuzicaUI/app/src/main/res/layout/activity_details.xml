@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingPrefix"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:local="http://schemas.android.com/apk/res-auto"
+            tools:ignore="MissingPrefix"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            app:layout_collapseMode="none"
+            >
+
+            <TextView
+                android:id="@+id/title_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Question"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/_15sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp">
+
+            <ImageView android:id="@+id/imgPic_author"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profile_pic"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgPic_author"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Vijay Verma"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/imgPic_author"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="\@realvjy"
+                    android:textColor="#AAFFFFFF"
+                    android:layout_toRightOf="@+id/imgPic_author"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout android:id="@+id/layoutQuestion_item"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:transitionName="questionTransition"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Why do people clear the screen multiple times when using a calculator?"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_17sdp"
+                android:maxLines="3"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#UI #UX #Psychology"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:textColor="#77FFFFFF"
+                android:textSize="@dimen/_10sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="102"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_chat_black_24dp"
+                    android:drawablePadding="@dimen/_7sdp"
+                    android:drawableTint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12K"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_favorite_black_24dp"
+                    android:drawablePadding="@dimen/_7sdp"
+                    android:drawableTint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30K"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_visibility_black_24dp"
+                    android:drawablePadding="@dimen/_7sdp"
+                    android:drawableTint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
