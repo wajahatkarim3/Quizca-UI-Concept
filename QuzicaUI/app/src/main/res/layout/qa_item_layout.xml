@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:padding="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Why do people clear the screen multiple times when using a calculator?"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_17sdp"
+        android:maxLines="3"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="#UI #UX #Psychology"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:textColor="#77FFFFFF"
+        android:textSize="@dimen/_10sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="102"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_chat_black_24dp"
+            android:drawablePadding="@dimen/_7sdp"
+            android:drawableTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12K"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_favorite_black_24dp"
+            android:drawablePadding="@dimen/_7sdp"
+            android:drawableTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30K"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_visibility_black_24dp"
+            android:drawablePadding="@dimen/_7sdp"
+            android:drawableTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
