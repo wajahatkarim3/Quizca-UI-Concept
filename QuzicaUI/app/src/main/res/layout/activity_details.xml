@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/_10sdp">
 
-            <ImageView android:id="@+id/imgPic_author"
+            <ImageView android:id="@+id/imgPic_details"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_45sdp"
                 android:layout_centerVertical="true"
@@ -60,10 +60,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/imgPic_author"
+                android:layout_toRightOf="@+id/imgPic_details"
                 android:orientation="vertical">
 
-                <TextView
+                <TextView android:id="@+id/txtName_details"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -75,7 +75,7 @@
                     />
 
 
-                <TextView
+                <TextView android:id="@+id/txtHandle_details"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -167,6 +167,10 @@
 
     </android.support.design.widget.AppBarLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>

@@ -33,4 +33,6 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.4.0'                    // http://jakewharton.github.io/butterknife/
 
     compile 'com.intuit.sdp:sdp-android:1.0.4'                  // https://github.com/intuit/sdp
+
+    compile 'com.github.florent37:viewanimator:1.0.5'           // https://github.com/florent37/ViewAnimator
 }
